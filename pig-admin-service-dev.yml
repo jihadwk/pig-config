@@ -10,10 +10,10 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: lengleng
-    url: jdbc:mysql://123.206.94.20:3356/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
   rabbitmq:
-    host: 123.206.94.20
+    host: 127.0.0.1
     port: 5672
     username: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
     password: ENC(7/5Zi1aQY/I7GACnfdVbpR1JtTrkM2Sa)
