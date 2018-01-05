@@ -7,7 +7,12 @@ server:
 #     port: 5672
 #     username: lengleng
 #     password: lengleng
-    
+    # zipkin:
+  #     base-url: http://localhost:5002
+  # sleuth:
+  #   enabled: true
+  #   sampler:
+  #     percentage: 1
 hystrix:
   command:
     default:
@@ -59,6 +64,10 @@ filter:
     anon:
       - /auth/**
       - /admin/code/*
-       
+      - /swagger-resources/**
+      - /swagger-ui.html
+      - /*/v2/api-docs
+      - /swagger/api-docs
+      - /webjars/**
 logging:
   config: classpath:logback.xml
